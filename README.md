@@ -26,6 +26,7 @@ uvicorn main:app --reload
 
 ## Solution explanation ##
 1. To compile the source code the uvicorn command is moved to the python file
+2. Pyminifier is used to obfuscate the code 
 2. The python file is compiled.
 3. The python file is deleted and the compiled file is renamed
 4. The shell applications are removed from the image
