@@ -48,5 +48,6 @@ async def sensor(meos_message: MeosMessage):
   return meos_message
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, log_level="info")
+    app_name = [ k for k,v in locals().items() if v == app][0]
+    uvicorn.run("main:" + app_name, host="0.0.0.0", port=8000, log_level="info")
     
